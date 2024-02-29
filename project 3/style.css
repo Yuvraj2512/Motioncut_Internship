@@ -1,0 +1,133 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    font-family: "Akaya Kanadaka", system-ui;
+}
+span{
+    font-size: 30px;
+}
+.navbar{
+    height: 80px;
+    background-color: black;
+    color: crimson;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+
+}
+.navbar .left a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.right a {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px 15px;
+    padding: 8px;
+    position: relative;
+    display: inline-block;
+    color: red;
+}
+.flexbox{
+    display: flex;
+    margin: 20px auto;
+    width: 1000px;
+    padding-top: 150px;
+}
+.left1{
+    width: 40%;
+}
+.big-pic{
+    width: 250px;
+}
+.big-pic img{
+    width: inherit;
+}
+.pic{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.small-pic{
+    width: 50px;
+}
+.small-pic img{
+    width: inherit;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding: 7px;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #e55451;
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: black;
+}
+.quantity{
+    display: flex;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display: flex;
+    margin: 20px 0;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+.cart-btn{
+    margin-right: 20px;
+    background-color: red;
+}
+.buy-btn{
+    background-color: red;
+}
+.cart-btn:hover{
+    background-color: black;
+}
+.buy-btn:hover{
+    background-color: black;
+}
+@media only screen and (max-width: 760px){
+   body{
+    font-size: 14px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+}
